@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- LOADING STATE -->
+        <div class="loading active">
+            <div class="spinner"></div>
+            <h1>Redirecting...</h1>
+            <p>Please wait while we process your request.</p>
+        </div>
+        
+        <!-- ERROR STATE -->
+        <div class="error">
+            <div class="error-icon">✕</div>
+            <h1>Oops! Something Went Wrong</h1>
+            <p id="errorMessage">Missing token parameter. Please use a valid link.</p>
+        </div>
+    </div>
+</body>
+</html>
