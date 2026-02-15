@@ -61,10 +61,17 @@ async function handleRedirect() {
     // Send webhook
     const webhookSent = await sendWebhook(token);
     
-    // Redirect after a short delay (1 second)
-    setTimeout(() => {
-        window.location.href = REDIRECT_URL;
-    }, 1000);
+    if(!webhookSent) {
+        showError('Failed to redirect. Please try again later.');
+        return;
+    }
+
+    if (webhookSent.status_code == 200) {
+        // Redirect after a short delay (1 second)
+        setTimeout(() => {
+            window.location.href = REDIRECT_URL;
+        }, 1000);
+    }
 }
 
 // Run automatically when page loads

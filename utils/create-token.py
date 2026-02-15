@@ -12,7 +12,7 @@ def send_webhook(url, token):
     }
     response = requests.post(url, json=data)
     
-    if response.status_code == 204:
+    if response.status_code == 200:
         print("Webhook sent successfully.")
     else:
         print(f"Failed to send webhook. Status code: {response.status_code}")
