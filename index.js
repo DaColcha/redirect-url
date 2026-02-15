@@ -1,5 +1,5 @@
 // Configuration
-const WEBHOOK_URL = 'https://theistical-maryellen-polishedly.ngrok-free.dev/webhook-test/9e885b4e-1c64-42f7-928f-0a3ec3eb8d2c';
+const WEBHOOK_URL = 'https://theistical-maryellen-polishedly.ngrok-free.dev/webhook/9e885b4e-1c64-42f7-928f-0a3ec3eb8d2c';
 const REDIRECT_URL = 'https://www.youtube.com/watch?v=4MIODTZkq_Y&list=RDMM8xrh4H_wmw0&index=11';
 
 // Get query string parameters
