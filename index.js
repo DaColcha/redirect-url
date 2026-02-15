@@ -64,10 +64,7 @@ async function handleRedirect() {
     if(!webhookSent) {
         showError('Failed to redirect. Please try again later.');
         return;
-    }
-
-    if (webhookSent.status_code == 200) {
-        // Redirect after a short delay (1 second)
+    }else {
         setTimeout(() => {
             window.location.href = REDIRECT_URL;
         }, 1000);
